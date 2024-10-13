@@ -1,0 +1,100 @@
+{
+	"type": "modal",
+	"callback_id": "",
+	"title": {
+		"type": "plain_text",
+		"text": "方案信息收集",
+		"emoji": false
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "提交",
+		"emoji": false
+	},
+	"blocks": [
+		{
+			"type": "input",
+			"block_id": "industry_input_block",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "请选择行业"
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Auto"
+						},
+						"value": "Auto"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "MFG"
+						},
+						"value": "MFG"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "MEADs"
+						},
+						"value": "MEADs"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "RCH/EC"
+						},
+						"value": "RCH/EC"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Gaming"
+						},
+						"value": "Gaming"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "FSI"
+						},
+						"value": "FSI"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "LSHC"
+						},
+						"value": "LSHC"
+					}
+				],
+				"action_id": "select_industry"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "所属行业"
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "use_case_input_block",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "input_usecase",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "请描述方案服务的业务场景：\n比如：客户电商系统，需要做数据分析。"
+				}
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "用户场景描述"
+			}
+		}
+	]
+}
