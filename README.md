@@ -9,10 +9,10 @@
     - generate model: sonnect 3.5
 
 ## 使用方式:
-    1. 在aws bedrock 创建知识库
-    2. 根据上一步启动的KB,配置./config.json文件中的kb_id 和 kb_configs字段
-    3. 在env-export.sh文件中,配置slack相关token和key
-    4. pip install requirements.txt
-    5. 配置能够调用bedrock的账号的AK,SK `aws configure`
-    6. 启动: bash app_start.sh
+1. 在aws bedrock 创建知识库,并上传文件
+2. 根据上一步启动的KB,配置./config.json文件中的kb_id 和 kb_configs字段
+3. 在env-export.sh文件中,配置slack相关token和key
+4. pip install requirements.txt
+5. 配置能够调用bedrock的账号的AK,SK `aws configure`
+6. 启动: bash app_start.sh
 
